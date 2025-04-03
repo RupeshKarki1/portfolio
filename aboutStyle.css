@@ -22,11 +22,53 @@
     font-size: 60px;
     font-weight: bold;
     margin-bottom: 20px;
+    color: rgb(183, 209, 232);
 }
-.aboutText p{
+.aboutText .aboutPara{
     font-size: 20px;
     line-height: 1.6;
-    color: rgb(216, 216, 216);
+    color: rgb(205, 199, 199);
     padding-right: 200px;
+    margin-bottom: 20px;
+}
 
+.classTitles{
+    display: flex;    
+    margin: 10px 0px 10px;
+}
+.tabLinks{
+    margin-right: 40px;
+    position: relative;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    color: rgb(147, 255, 224);
+}
+
+.tabLinks::after{
+    content: '';
+    width: 0;
+    height: 5px;
+    background: blueviolet;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s; 
+    position: absolute;
+}
+.tabLinks.activeLink::after{
+    width: 50%;
+}
+.tabContent ul span{
+    color: rgb(76, 185, 114); 
+    font-size: 18px; 
+}
+
+.tabContent ul li{
+   list-style: none;
+   margin: 40px 0;
+   color: rgb(147, 255, 224);
+}
+.tabContent ul  br{  
+    margin-bottom: 10px;
+    font-weight: bold;  
 }

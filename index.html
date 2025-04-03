@@ -7,11 +7,11 @@
     <title>projectsCollector</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="aboutStyle.css">
+    
 </head>
 
 <body>
     <div id="header">
-        
         <div class="container">
             <nav class="navbar">    
                 <img src="img/sadnoodleLogo.png" class="logo">
@@ -29,12 +29,13 @@
                 <h1 class="frontFirstLine">Hi! I am <span>Rupesh,</span></h1>
                 <h1 class="frontSecondLine"> <span>Welcome</span> to my <br>project collection<br></h1>
             </div>
+
         </div>      
+       
        
     </div>
 
 <!-- about section -->
-
     <div id="about">
         <div class="aboutContainer">
             <div class="aboutImg">
@@ -43,18 +44,76 @@
 
             <div class="aboutText">
                 <h1>About Me</h1>
-                <p> 
+                <p class="aboutPara"> 
                     Hello! My name is Rupesh, and I am a passionate web developer with a love for creating dynamic and user-friendly websites. 
-                    I specialize in front-end development, crafting responsive designs, and bringing ideas to life through clean and efficient code. 
+                    I specialize in front-end development, crafting responsive designs, and bringing ideas to life. 
                     When I'm not coding, I enjoy exploring new technologies, solving challenging problems, and continuously learning to improve my skills. 
                     Welcome to my portfolio, where I showcase my projects and share my journey in the world of web development!      
                 </p>
+
+                <div class="classTitles">
+                    <p class="tabLinks" id="skillBtn"> Skills </p>
+                    <p class="tabLinks" id="expBtn"> Experience </p>
+                    <p class="tabLinks" id="eduBtn"> Education </p>
+                </div>
+                <!--Skills tab-->
+                <div class="tabContent" id="skillTab" style="display: none;">
+                    <ul>
+                        <li>
+                            <span>Programming languages</span>
+                             <br>JavaScript
+                             <br>C 
+                             <br>Dot net 
+                        </li>
+                        <li>
+                            <span>Softwares Learned</span>
+                            <br> Blender 
+                            <br> Photoshop
+                            <br> Excel
+                        </li> 
+                    </ul>
+                </div>
+
+                <!--Experience tab-->
+                <div class="tabContent" id="expTab" style="display: none;">
+                    <ul>
+                        <li>
+                        </li>     
+                    </ul>
+                </div>
+
+                <!--Education tab-->
+                <div class="tabContent" id="eduTab" style="display: none;">
+                    <ul>
+                        <li>
+                            <span>SEE</span>
+                             <br>V.S. Niketan School
+                             <br>Thapathali, Kathmandu
+                             <br>Year: yyyy/mm/dd
+                        </li>
+                        <li>
+                            <span>Diploma in civil engineering</span>
+                            <br> Madan Ashrit Polytechnic Institute
+                            <br> Gothatar, Kathmandu
+                            <br> Start: 2021
+                            <br> End: 2024
+                        </li> 
+                        <li>
+                            <span>Bachelor in Computer Application</span>
+                            <br> Nepal Mega College
+                            <br> Babarmahal, Kathmandu
+                            <br> Start: 2024
+                            <br> End: 2028 (estimated)
+                        </li> 
+                    </ul>
+                </div>
+
             </div>
         </div>
         
         
     </div>
-
+<script src="index.js"></script>
 </body>
 
 </html>
