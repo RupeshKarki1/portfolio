@@ -1,0 +1,32 @@
+#about{
+    padding: 80px 0;
+}
+
+.aboutContainer{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.aboutImg{
+    flex-basis: 35%; /*will take up 35% of the flexbox's width*/
+}
+
+.aboutImg img{
+    width: 100%;   
+}
+
+.aboutText{
+    flex-basis: 63%;
+}
+.aboutText h1{
+    font-size: 60px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.aboutText p{
+    font-size: 20px;
+    line-height: 1.6;
+    color: rgb(216, 216, 216);
+    padding-right: 200px;
+
+}
