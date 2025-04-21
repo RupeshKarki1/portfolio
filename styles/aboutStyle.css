@@ -34,30 +34,32 @@
 
 .classTitles{
     display: flex;    
-    margin: 10px 0px 10px;
+   /* margin: 10px 0px 10px; */
 }
+
 .tabLinks{
-    margin-right: 40px;
+    margin-right: 10px;
+    width: 150px;
+    height: 40px;
+    text-align: center;
     position: relative;
     cursor: pointer;
     font-size: 18px;
     font-weight: bold;
     color: rgb(147, 255, 224);
+    user-select: none   ;
 }
 
-.tabLinks::after{
-    content: '';
-    width: 0;
-    height: 5px;
-    background: blueviolet;
-    left: 0;
-    bottom: -6px;
-    transition: 0.5s; 
-    position: absolute;
+.tabLinks.active{
+    padding-top: 60px;
+    padding-bottom: 40px;
+    background: linear-gradient(to top, rgb(154, 38, 221), rgb(71, 18, 102), rgb(36, 35, 35));
+    border-radius: 20%;
 }
-.tabLinks.activeLink::after{
-    width: 50%;
+.testBtn:focus {
+    background-color: aliceblue;
 }
+
 .tabContent ul span{
     color: rgb(76, 185, 114); 
     font-size: 18px; 

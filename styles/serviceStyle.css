@@ -1,0 +1,62 @@
+#services h1{
+    font-size: 60px;
+    color: rgb(183, 209, 232);
+    font-weight: bold;
+    margin-bottom: 20px;  
+    text-align: center;
+}
+#services h2{
+    height: 30px;
+    color: black;
+    text-align: center;
+    margin-top: 10px;
+    background-color: rgb(183, 209, 232);
+    border-color: rgb(253, 253, 253);
+    width: 70%;
+    align-items: center;
+    border-radius: 5%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.webService, .backendService, .blenderService{
+    height: 350px;
+    border: solid;
+    border-color: rgb(253, 253, 253);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    border-radius:10%;
+}
+
+.serviceContainer{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: stretch;
+}
+
+.serviceContainer p{
+    height: 30%;
+    color: rgb(205, 199, 199);
+    font-weight: bold;
+    font-size: 19px;
+    margin-top: 10px;
+    line-height: 25px;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+.learnLinks{
+    text-align: center;
+    padding-top: 10px;
+    border-radius: 5px;
+    height: 30px;
+    width: 100px;
+    margin-bottom: 20px;
+    text-decoration: none;
+    background-color: rgb(183, 209, 232);
+    color: black;
+    font-weight: bold;
+}
+

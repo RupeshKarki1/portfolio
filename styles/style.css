@@ -13,11 +13,10 @@ body{
 #header{
     width: 100%;
     height: 100vh;
-    background-image: url(img/powerImg.png);
+    background-image: url(../img/powerImg.png);
     background-size:contain;
     background-repeat: no-repeat;
-    background-position: 115% center;
-    
+    background-position: 115% center; 
 }
 
 .container{
