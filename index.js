@@ -1,38 +1,31 @@
-const skillBtn = document.getElementById("skillBtn").addEventListener("click", ()=>{
-    clear("skillTab");
-    onClickShow("skillTab");
-   // 
-    
-})
-const expBtn = document.getElementById("expBtn").addEventListener("click", ()=>{
-    onClickShow("expTab");
-})
-const eduBtn = document.getElementById("eduBtn").addEventListener("click", ()=>{
-    clear("eduTab");
-    onClickShow("eduTab");
-    //
+const skillBtn = document.getElementById("skillBtn")
+const expBtn = document.getElementById("expBtn")
+const eduBtn = document.getElementById("eduBtn")
 
+let skillTab = document.getElementById("skillTab")
+let expTab = document.getElementById("expTab")
+let eduTab = document.getElementById("eduTab")
+
+let tabContent = document.querySelectorAll(".tabContent")
+
+//adding click function to buttons
+skillBtn.addEventListener("click", ()=>{
+    clickShow(skillTab)
+})
+expBtn.addEventListener("click", ()=>{
+
+   clickShow(expTab);
+})
+eduBtn.addEventListener("click", ()=>{
+    clickShow(eduTab);
 })
 
-
-function clear(currentTab){
-    const tabs = ["skillTab", "expTab", "eduTab"]
-    tabs.forEach((tabId) => {
-        const tab = document.getElementById(tabId);
-        if(tabId !== currentTab){
-            tab.style.display = 'none';
-        }
-    });
+//click function to add active state to tab class
+function clickShow(tab){
+    //deactivate all the buttons first
+    tabContent.forEach((content) =>{
+        content.classList.remove('active');
+    })
+    //activate afterwards to only activate the selected button 
+    tab.classList.add('active');
 }
-
-function onClickShow(tabName){
-    const hiddenText = document.getElementById(tabName);
-
-    if (hiddenText.style.display === "none"){
-        hiddenText.style.display = "block";
-    }else{
-        hiddenText.style.display = "none";
-    } 
-}
-
-

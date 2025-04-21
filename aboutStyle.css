@@ -72,3 +72,10 @@
     margin-bottom: 10px;
     font-weight: bold;  
 }
+.tabContent{
+    display: none;
+}
+
+.tabContent.active {
+    display: block;
+}
