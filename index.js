@@ -23,9 +23,16 @@ eduBtn.addEventListener("click", ()=>{
 //click function to add active state to tab class
 function clickShow(tab){
     //deactivate all the buttons first
-    tabContent.forEach((content) =>{
-        content.classList.remove('active');
-    })
-    //activate afterwards to only activate the selected button 
-    tab.classList.add('active');
+    if (tab.classList.contains('active')){
+        tab.classList.remove('active')
+    }else{
+        tabContent.forEach((content) =>{
+            content.classList.remove('active');
+        })
+        
+        //activate afterwards to only activate the selected button 
+        tab.classList.add('active');
+    }
+   
+
 }
