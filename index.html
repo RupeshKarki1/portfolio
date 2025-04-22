@@ -5,13 +5,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>projectsCollector</title>
+
+    <!-----------STYLESHEETS LINKS-------------->
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/aboutStyle.css">
     <link rel="stylesheet" href="styles/serviceStyle.css">
-    
+    <link rel="stylesheet" href="styles/contactStyle.css">
+
+    <!------------- font awesome icon kit script inject----------------->
+    <script src="https://kit.fontawesome.com/6b564c93f9.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
+    <!--Navbar refactoring in progress-->
     <div id="header">
         <div class="container">
             <nav class="navbar">    
@@ -161,7 +167,32 @@
 
 <!--------------CONTACT------------------------->
 
+    <div class="contactContainer">
+        <div class="contactInfo">
+            <div class="contactLeft">
+                <h1 class="contactHeading"> Contact Me</h1>
+                <p>contact@gmail.com</p>
+                <p>Ph. No.: 9800000000</p>
 
+                <div class="iconsContainer">
+                    <a class="githubIcon" href=""><i class="fa-brands fa-github"></i></a>
+                    <a class="facebookIcon" href=""><i class="fa-brands fa-facebook"></i></a>
+                    <a class="linkedinIcon" href=""><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="contactRight">
+            <div class="formContainer">
+                <form>
+                    <input type="text" name="Name" placeholder="Enter your name" required>
+                    <input type="text" name="Email" placeholder="Enter your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Enter your message"></textarea>
+                </form>
+            </div>
+        </div>
+       
+    </div>
 
 
 
