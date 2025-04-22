@@ -7,14 +7,14 @@
 }
 #services h2{
     height: 30px;
-    color: black;
+    color: white;
     text-align: center;
     margin-top: 10px;
-    background-color: rgb(183, 209, 232);
+    background-color: rgb(48, 9, 110);
     border-color: rgb(253, 253, 253);
     width: 70%;
     align-items: center;
-    border-radius: 5%;
+    border-radius: 10px ;
     padding-top: 5px;
     padding-bottom: 5px;
 }
@@ -22,23 +22,25 @@
 .webService, .backendService, .blenderService{
     height: 350px;
     border: solid;
-    border-color: rgb(253, 253, 253);
+    border-color: rgb(183, 209, 232);
+    background-color: rgb(54, 4, 146);  
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    justify-content:center;
+    justify-content:space-between;
     align-items: center;
     border-radius:10%;
 }
 
+
 .serviceContainer{
     display: flex;
     justify-content: space-evenly;
-    align-items: stretch;
+    align-items:stretch;
 }
 
 .serviceContainer p{
-    height: 30%;
+    height: 45%;
     color: rgb(205, 199, 199);
     font-weight: bold;
     font-size: 19px;
@@ -46,7 +48,17 @@
     line-height: 25px;
     margin-bottom: 20px;
     padding: 20px;
+    background-color: rgb(68, 69, 86);
+    color: white;
+    width: 85%;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.3) 1.95px 1.95px 2.6px;
 }
+.serviceContainer p:hover{
+    background-color: white;
+    color: rgb(68, 69, 86);
+}
+
 .learnLinks{
     text-align: center;
     padding-top: 10px;
