@@ -40,7 +40,7 @@
 .tabLinks{
     margin-right: 10px;
     width: 150px;
-    height: 40px;
+    height: 30px;
     text-align: center;
     position: relative;
     cursor: pointer;
@@ -51,10 +51,11 @@
 }
 
 .tabLinks.active{
-    padding-top: 60px;
-    padding-bottom: 40px;
+    font-size: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
     background: linear-gradient(to top, rgb(154, 38, 221), rgb(71, 18, 102), rgb(36, 35, 35));
-    border-radius: 20%;
+    border-radius: 0% 0% 20% 20%;
 }
 .testBtn:focus {
     background-color: aliceblue;
